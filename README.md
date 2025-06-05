@@ -1,16 +1,17 @@
+
 # Finora
 
-**Finora** is a cross-platform personal finance manager built using **Flutter**, **Golang**, and **Docker**. It helps users seamlessly track income sources, categorize expenditures, and (soon) create and manage budgets—available on **web**, **mobile**, and **desktop** platforms.
+**Finora** is a cross-platform personal finance manager built with **Flutter**, **Golang**, and **Docker**. It empowers users to manage income, categorize expenses, and plan budgets (coming soon) from any device—web, mobile, or desktop.
 
 ## ✨ Features
 
 - 💰 Track multiple income sources
 - 📊 Log and categorize expenses
-- 🔐 Secure authentication and user accounts
-- 📅 Timeline of transactions
-- 📁 Exportable transaction history (CSV, PDF planned)
-- 🧮 Budgeting system *(coming soon)*
-- 🖥️ Cross-platform: Web, Android, iOS, Windows, macOS, Linux
+- 🔐 Secure user authentication
+- 🗂️ Organized transaction timeline
+- 📤 Export transaction data (CSV, PDF in progress)
+- 🧮 Budgeting capabilities *(coming soon)*
+- 🌍 Multi-platform support: Web, Android, iOS, Windows, macOS, Linux
 
 ## 🛠️ Tech Stack
 
@@ -29,30 +30,30 @@
 - Flutter SDK
 - Go (1.20+)
 - Docker & Docker Compose
-- PostgreSQL (if not using Docker for DB)
+- PostgreSQL (if not using Docker)
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/finora.git
+git clone https://github.com/Jahmia-Hezron/finora.git
 cd finora
 ```
 
-### Backend (Golang API)
+### Run Backend (Golang API)
 
 ```bash
 cd backend
 go run main.go
 ```
 
-### Frontend (Flutter App)
+### Run Frontend (Flutter)
 
 ```bash
 cd frontend
 flutter pub get
-flutter run -d chrome   # for web
-flutter run -d windows  # for desktop
-flutter run -d android  # for mobile
+flutter run -d chrome   # For web
+flutter run -d android  # For mobile
+flutter run -d windows  # For desktop
 ```
 
 ### Docker Setup (Full Stack)
@@ -61,48 +62,43 @@ flutter run -d android  # for mobile
 docker-compose up --build
 ```
 
-## 🧱 Project Structure
+## 📁 Project Structure
 
 ```
 finora/
 ├── backend/           # Golang API
-│   ├── main.go
-│   └── ...
 ├── frontend/          # Flutter frontend (web, mobile, desktop)
-│   ├── lib/
-│   └── ...
-├── docker/
+├── docker/            # Docker and container setup
 │   ├── Dockerfile.frontend
 │   ├── Dockerfile.backend
 │   └── docker-compose.yml
-└── README.md
+├── README.md          # General project README
 ```
 
-## 📌 Roadmap
+## 🧭 Roadmap
 
 - [x] Income & Expense Tracking
-- [x] Basic Authentication
-- [ ] Budgeting Module
-- [ ] Data Visualization (Pie Charts, Line Graphs)
+- [x] JWT-based Authentication
+- [ ] Budget Management
+- [ ] Graphs and Reports
 - [ ] Multi-Currency Support
-- [ ] Notifications & Reminders
-- [ ] Settings & Preferences
+- [ ] Notifications & Preferences
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions are welcome!
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
+1. Fork the repo
+2. Create your branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
 5. Open a Pull Request
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## 💬 Contact
+## 👤 Author
 
-Built with 💻 by **Jahmia Hezron**  
-Reach out on [LinkedIn](https://linkedin.com/in/your-profile) or [Email](mailto:your-email@example.com)
+Developed with ❤️ by **Jahmia Hezron**  
+Find me on [Website](https://jahmia-hezron.github.io) or [Email](mailto:hezron.p.jahmia@gmail.com)
